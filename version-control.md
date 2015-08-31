@@ -74,4 +74,24 @@ Ada dua jenis aplikasi VCS:
 
 * [Command line](http://git-scm.com/downloads)
 * [TortoiseGit](https://code.google.com/p/tortoisegit/)
-* 
+* Plugin IDE (Netbeans, Eclipse)
+
+## Pemakaian Git ##
+
+### Konfigurasi Awal ###
+
+* Set username : `git config --global user.name “Endy Muhardin”`
+* Set email : `git config --global user.email “endy.muhardin@gmail.com”`
+
+### Membuat Database / Repository ###
+
+* Perintah : `git init <nama folder>`
+
+### Menyimpan file ke dalam repository ###
+
+* Perintah : 
+
+    ```
+    git add .
+    git commit -m “keterangan perubahan”
+    ```
