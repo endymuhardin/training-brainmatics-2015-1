@@ -22,3 +22,56 @@
 * Branch : parallel development
   * maintenance branch : bug fix untuk versi terdahulu
   * feature branch : develop feature tanpa mengganggu orang lain
+
+
+## Aplikasi Version Control System ##
+
+### Jenis VCS ###
+
+Ada dua jenis aplikasi VCS:
+
+* Centralized : database cuma ada satu di server pusat
+
+	* untuk melihat perubahan, harus connect ke server
+	* until submit perubahan, harus connect ke server
+	* ijin akses bisa diatur per folder
+
+* Distributed : database ada di masing-masing orang
+
+	* melihat history bisa dilakukan di local
+	* submit perubahan di local dull, baru sync dungeon server
+	* tidak bisa ijin akses per folder, karena seluruh database ada di local
+
+### Berbagai Aplikasi VCS ###
+
+* Centralized
+
+	* CVS
+	* [Subversion](https://subversion.apache.org/)
+	* Microsoft Source Safe
+
+* Distributed
+
+	* [Git](http://git-scm.com/)
+	* [Mercurial](https://mercurial.selenic.com/)
+	* [Bazaar](https://bazaar.canonical.com/)
+
+
+### Provider VCS ###
+
+* [Github](https://github.com/)
+* [Bitbucket](https://bitbucket.org/)
+* Google Code (almarhum)
+* [Sourceforge](http://sourceforge.net/)
+
+### Aplikasi Server Git ###
+
+* [Gitolite](http://gitolite.com/gitolite/index.html)
+* [Gitblit](http://www.gitblit.com/)
+* [Gitlab](https://about.gitlab.com/)
+
+### Aplikasi Client Git ###
+
+* [Command line](http://git-scm.com/downloads)
+* [TortoiseGit](https://code.google.com/p/tortoisegit/)
+* 
