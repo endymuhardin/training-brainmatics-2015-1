@@ -4,6 +4,7 @@
 
 # Java Ignore
 *.class
+*.jar
 
 # Maven Ignore
 target
