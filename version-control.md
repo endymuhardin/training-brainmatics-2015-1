@@ -200,7 +200,7 @@ git pull
 * Perintah
 
 ```
-git reset —hard
+git reset --hard
 git clean -d -f
 ```
 
