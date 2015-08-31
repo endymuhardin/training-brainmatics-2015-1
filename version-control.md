@@ -106,6 +106,32 @@ git init training-brainmatics-2015-1
     git commit -m “keterangan perubahan”
     ```
 
+### Membuat SSH Keypair ###
+
+* Perintah
+
+```
+ssh-keygen
+```
+
+* Catatan:
+
+	* Untuk Windows, gunakan Git Bash
+	* Nama file jangan diganti, tetap ikuti default (`id_rsa`)
+
+* Hasilnya ada di:
+
+	* Linux : `/home/namauser/.ssh`
+	* Windows : `c:\Users\namauser\.ssh`
+	* Mac : `/Users/namauser/.ssh`
+
+* Daftarkan di Github
+	
+	* Buka file `id_rsa.pub` dengan text editor
+	* Select All, copy isinya
+	* Icon User > Settings > SSH Keys
+	* Paste di sana
+
 ### Mendaftarkan Remote Repository ###
 
 * Perintah
