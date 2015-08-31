@@ -62,4 +62,11 @@ java Halo
     * class `rt.jar` dalam lokasi instalasi JRE
     * semua file jar dalam `[JRE]/lib/ext`
 
- 
+## Setting CLASSPATH ##
+
+1. Menggunakan opsi `-cp` pada pemanggilan `java`. Contoh : `java -cp Halo`
+2. Membuat environment variable dengan nama `CLASSPATH`. Ada 3 cara :
+
+    1. Langsung diset sebelum memanggil. Contoh : `CLASSPATH=bin java Halo`
+    2. Menggunakan perintah `set` (Windows) atau `export` (Linux/Mac). Contoh : `set CLASSPATH=bin`
+    3. Setting di Environment Variable untuk user maupun keseluruhan system (**tidak dianjurkan**). 
