@@ -193,7 +193,11 @@ git pull
 
 * Catatan
 
-	* Folder local harus dalam kondisi bersih : (tidak ada perubahan atau semua perubahan sudah dicommit/distash)
+	* Folder local harus dalam kondisi bersih (tidak ada perubahan atau semua perubahan sudah dicommit/distash)
+	* Membersihkan folder local : 
+		* hapus file/folder yang belum dicommit : bila perubahan tidak penting
+		* commit : bila pekerjaan/perubahan sudah selesai
+		* stash : bila perubahan penting, tapi belum selesai
 
 ### Menghapus perubahan di local ###
 
