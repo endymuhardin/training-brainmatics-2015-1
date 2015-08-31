@@ -85,7 +85,17 @@ Ada dua jenis aplikasi VCS:
 
 ### Membuat Database / Repository ###
 
-* Perintah : `git init <nama folder>`
+* Perintah 
+
+```
+git init <nama folder>
+```
+
+* Contoh
+
+```
+git init training-brainmatics-2015-1
+```
 
 ### Menyimpan file ke dalam repository ###
 
@@ -95,3 +105,32 @@ Ada dua jenis aplikasi VCS:
     git add .
     git commit -m “keterangan perubahan”
     ```
+
+### Mendaftarkan Remote Repository ###
+
+* Perintah
+
+```
+git remote add <nama alias> <url remote repo>
+```
+
+* Contoh
+
+```
+git remote add github git@github.com:endymuhardin/training-brainmatics-2015-1.git
+```
+
+### Upload Repository Local ke Remote ###
+
+* Perintah
+
+```
+git push <nama remote> <nama branch>
+```
+
+
+* Contoh
+
+```
+git push github master
+```
