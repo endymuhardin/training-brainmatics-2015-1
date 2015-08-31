@@ -43,3 +43,23 @@ javac *.java
 ```
 javac *.java -d bin/
 ```
+
+## Menjalankan Aplikasi Java ##
+
+* Class yang bisa dijalankan adalah class yang memiliki method `public static void main(String xx)`
+* Aplikasi Java dijalankan dengan menggunakan perintah `java` dengan argumen nama class yang memiliki method main.
+* Contoh
+
+```
+java Halo
+```
+
+* Pada saat perintah `java` dijalankan, Java Runtime Environment (JRE) akan mencari class di lokasi tertentu, yang disebut dengan istilah `CLASSPATH`
+
+* Lokasi `CLASSPATH` default:
+
+    * folder tempat kita berada
+    * class `rt.jar` dalam lokasi instalasi JRE
+    * semua file jar dalam `[JRE]/lib/ext`
+
+ 
