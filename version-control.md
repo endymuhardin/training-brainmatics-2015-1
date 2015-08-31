@@ -128,14 +128,13 @@ ssh-keygen
 * Daftarkan di Github
 	
 	* Buka file `id_rsa.pub` dengan text editor
-	* Select All, copy isinya
+	* Select All, copy isinya, paste di github
 	* Github : Icon User > Settings > SSH Keys
 
 ![Github Public Key Settings](https://github.com/endymuhardin/training-brainmatics-2015-1/raw/master/img/add-ssh-key-github.png)
 
-	* Paste di sana
-
 ![Github Add New Key](https://github.com/endymuhardin/training-brainmatics-2015-1/raw/master/img/copy-paste-public-key.png)
+
 
 ### Mendaftarkan Remote Repository ###
 
