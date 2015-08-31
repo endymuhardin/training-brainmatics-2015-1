@@ -209,3 +209,13 @@ git clean -d -f
 ```
 
 * Catatan : Perintah di atas akan menghapus semua perubahan yang belum dicommit, dan menghapus semua file yang dibuat dan belum dicommit
+
+### Stash ###
+
+* Penjelasan : meminggirkan pekerjaan/perubahan kita ke lokasi temporary sehingga kondisi folder menjadi clean dan bisa melakukan pull
+
+* Cara kerja:
+
+	# `git stash` : meminggirkan pekerjaan yang belum selesai, sehingga folder menjadi bersih
+	# `git pull` : mengambil perubahan terbaru dari server
+	# `git stash pop` : mengembalikan pekerjaan yang belum selesai tadi ke folder
