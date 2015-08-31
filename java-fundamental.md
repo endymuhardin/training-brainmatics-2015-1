@@ -69,4 +69,6 @@ java Halo
 
     1. Langsung diset sebelum memanggil. Contoh : `CLASSPATH=bin java Halo`
     2. Menggunakan perintah `set` (Windows) atau `export` (Linux/Mac). Contoh : `set CLASSPATH=bin`
-    3. Setting di Environment Variable untuk user maupun keseluruhan system (**tidak dianjurkan**). 
+    3. Setting di Environment Variable untuk user maupun keseluruhan system (**tidak dianjurkan**).
+
+Untuk lebih jelasnya bisa disimak dalam [penjelasan saya di Youtube](https://www.youtube.com/watch?v=A3sM9ePaBvw)
