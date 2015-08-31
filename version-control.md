@@ -164,3 +164,44 @@ git push <nama remote> <nama branch>
 ```
 git push github master
 ```
+
+### Mengambil Repository Orang Lain ###
+
+* Perintah
+
+```
+git clone <url repo> [folder tujuan]
+```
+
+* Contoh
+
+```
+git clone git@github.com:endymuhardin/training-brainmatics-2015-1.git
+```
+
+* Catatan
+
+	* Jangan dilakukan dalam folder repository yang lain !!!
+
+### Update Repository dari Remote ###
+
+* Perintah
+
+```
+git pull
+```
+
+* Catatan
+
+	* Folder local harus dalam kondisi bersih : (tidak ada perubahan atau semua perubahan sudah dicommit/distash)
+
+### Menghapus perubahan di local ###
+
+* Perintah
+
+```
+git reset —hard
+git clean -d -f
+```
+
+* Catatan : Perintah di atas akan menghapus semua perubahan yang belum dicommit, dan menghapus semua file yang dibuat dan belum dicommit
