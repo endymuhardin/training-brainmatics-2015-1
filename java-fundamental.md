@@ -72,3 +72,17 @@ java Halo
     3. Setting di Environment Variable untuk user maupun keseluruhan system (**tidak dianjurkan**).
 
 Untuk lebih jelasnya bisa disimak dalam [penjelasan saya di Youtube](https://www.youtube.com/watch?v=A3sM9ePaBvw)
+
+## Membuat Package ##
+
+* Kode program Java dipaketkan dalam file `jar`
+* File `jar` ini sebetulnya adalah file `zip` biasa
+* Kita bisa membuatnya dengan menggunakan WinZIP, WinRAR, dsb. Walaupun demikian perlu diingat agar kita menggunakan algoritma ZIP, **bukan** RAR. Terutama bila menggunakan aplikasi WinRAR
+* File `jar` bisa didaftarkan ke CLASSPATH seperti layaknya folder
+* Contoh:
+
+```
+java -cp belajar.jar com.muhardin.endy.belajar.java.Halo
+```
+
+* Perlu diperhatikan juga, file zip tersebut harus langsung berisi nama package. Dalam contoh di atas, berarti file belajar.jar harus memiliki folder com pada saat dibuka dengan WinZIP 
