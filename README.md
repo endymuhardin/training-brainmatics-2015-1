@@ -1,6 +1,6 @@
+# Materi Training #
 
-
-Hari 1 :
+## Hari 1 ##
 
 - Team Work
   - Git
@@ -11,12 +11,12 @@ Hari 1 :
   - Classpath
   - Compile dan Run
 
-Hari 2 :
+## Hari 2 ##
 
 - Domain Model
 - Skema Database
 
-Hari 3 :
+## Hari 3 ##
 
 - Akses Database
 - Tampilan/User Interface Web
@@ -26,11 +26,11 @@ Hari 3 :
     - Opeshift
     - Heroku
 
-Hari 4 :
+## Hari 4 ##
 
 - Report : PDF/XLS
 - Upload
 
-Hari 5 :
+## Hari 5 ##
 
 - Security
