@@ -216,6 +216,6 @@ git clean -d -f
 
 * Cara kerja:
 
-	# `git stash` : meminggirkan pekerjaan yang belum selesai, sehingga folder menjadi bersih
-	# `git pull` : mengambil perubahan terbaru dari server
-	# `git stash pop` : mengembalikan pekerjaan yang belum selesai tadi ke folder
+	1. `git stash` : meminggirkan pekerjaan yang belum selesai, sehingga folder menjadi bersih
+	2. `git pull` : mengambil perubahan terbaru dari server
+	3. `git stash pop` : mengembalikan pekerjaan yang belum selesai tadi ke folder
