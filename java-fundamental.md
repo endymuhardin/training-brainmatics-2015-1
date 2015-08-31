@@ -85,4 +85,4 @@ Untuk lebih jelasnya bisa disimak dalam [penjelasan saya di Youtube](https://www
 java -cp belajar.jar com.muhardin.endy.belajar.java.Halo
 ```
 
-* Perlu diperhatikan juga, file zip tersebut harus langsung berisi nama package. Dalam contoh di atas, berarti file belajar.jar harus memiliki folder com pada saat dibuka dengan WinZIP 
+* Perlu diperhatikan juga, file zip tersebut harus langsung berisi nama package. Dalam contoh di atas, berarti file belajar.jar harus memiliki folder `com` pada saat dibuka dengan WinZIP 
