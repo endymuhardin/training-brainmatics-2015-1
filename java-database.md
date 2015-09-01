@@ -99,6 +99,19 @@
 </dependency>
 ```
 
+* `pom.xml` tambahkan Spring Boot Maven Plugin
+
+```xml
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
+
 * `src/main/resources/application.properties` : Konfigurasi koneksi database
 
 ```
