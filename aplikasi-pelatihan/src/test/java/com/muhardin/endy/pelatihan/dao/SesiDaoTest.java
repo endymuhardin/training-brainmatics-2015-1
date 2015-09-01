@@ -2,15 +2,9 @@ package com.muhardin.endy.pelatihan.dao;
 
 import com.muhardin.endy.pelatihan.AplikasiPelatihanApplication;
 import com.muhardin.endy.pelatihan.entity.Materi;
-import com.muhardin.endy.pelatihan.entity.Peserta;
 import com.muhardin.endy.pelatihan.entity.Sesi;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import javax.sql.DataSource;
-import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
