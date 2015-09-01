@@ -11,7 +11,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import org.hibernate.annotations.GenericGenerator;
 
-@Entity @Table(name = "m_materi")
+@Entity @Table(name = "materi")
 public class Materi {
     
     @Id @GeneratedValue(generator = "uuid")
