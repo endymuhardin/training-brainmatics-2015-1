@@ -1,3 +1,4 @@
+delete from sesi;
 delete from materi;
 
 insert into materi (id, kode, nama)

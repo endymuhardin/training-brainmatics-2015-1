@@ -37,4 +37,46 @@ public class Sesi {
             inverseJoinColumns = @JoinColumn(name = "id_peserta")
     )
     private List<Peserta> daftarPeserta = new ArrayList<>();
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Date getMulai() {
+        return mulai;
+    }
+
+    public void setMulai(Date mulai) {
+        this.mulai = mulai;
+    }
+
+    public Date getSampai() {
+        return sampai;
+    }
+
+    public void setSampai(Date sampai) {
+        this.sampai = sampai;
+    }
+
+    public Materi getMateri() {
+        return materi;
+    }
+
+    public void setMateri(Materi materi) {
+        this.materi = materi;
+    }
+
+    public List<Peserta> getDaftarPeserta() {
+        return daftarPeserta;
+    }
+
+    public void setDaftarPeserta(List<Peserta> daftarPeserta) {
+        this.daftarPeserta = daftarPeserta;
+    }
+    
+    
 }
