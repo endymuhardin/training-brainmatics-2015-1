@@ -15,15 +15,16 @@
 
 - Domain Model
 - Skema Database
+- Akses Database
+- Database Testing
 
 ## Hari 3 ##
 
-- Akses Database
 - Tampilan/User Interface Web
 - Deployment
   - Local
   - Cloud
-    - Opeshift
+    - Openshift
     - Heroku
 
 ## Hari 4 ##
