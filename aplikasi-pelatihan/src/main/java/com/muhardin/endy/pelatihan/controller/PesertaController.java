@@ -2,6 +2,7 @@ package com.muhardin.endy.pelatihan.controller;
 
 import com.muhardin.endy.pelatihan.dao.PesertaDao;
 import com.muhardin.endy.pelatihan.entity.Peserta;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -27,13 +28,13 @@ public class PesertaController {
     
     @RequestMapping(value="/peserta", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
-    public void insertPesertaBaru(@RequestBody Peserta p){
+    public void insertPesertaBaru(@RequestBody @Valid Peserta p){
         pd.save(p);
     }
     
     @RequestMapping(value="/peserta/{id}", method = RequestMethod.PUT)
     @ResponseStatus(HttpStatus.OK)
-    public void updatePeserta(@PathVariable("id") String id, @RequestBody Peserta p){
+    public void updatePeserta(@PathVariable("id") String id, @RequestBody @Valid Peserta p){
         p.setId(id);
         pd.save(p);
     }
