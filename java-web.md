@@ -55,3 +55,33 @@ JavaScript Framework :
 * EmberJS
 * AngularJS
 
+## Spring MVC ##
+
+* `@Controller` : dipasang di class. Supaya class dideteksi sebagai controller, dan diinisialisasi oleh Spring. Sehingga kalau ada property yang `@Autowired`, akan diisi oleh Spring. Misalnya `private @Autowired PesertaDao pd;`
+
+* `@RequestMapping` : dipasang di method. Untuk melakukan mapping antara URL dengan method yang akan menanganinya.
+
+* `@RequestParam` : dipasang di method argument. Untuk mengambil data/variabel dari query parameter. Misalnya `/peserta?nama=endy`
+
+* `@PathVariable` : dipasang di method argument. Untuk mengambil data/variabel dari URL. Misalnya untuk URL `/sesi/JF-001/2015`, dengan `@RequestMapping(“/sesi/{kode}/{tahun}”)`, bisa diambil dengan `@PathVariable(“kode”) String kode` dan `@PathVariable(“tahun”) String tahun`
+
+* `@ResponseStatus` : menyatakan HTTP Status Code yang dihasilkan oleh method. Misalnya 200, 201, 404, dsb. Daftar status code yang bisa dikembalikan bisa dilihat [di sini](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes).
+
+* `@ResponseBody` : menyatakan bahwa apapun hasil yang dikembalikan oleh method, langsung dikirim ke requester. Hasil ini akan dikonversi sesuai format yang diminta requester melalui header `Accept`. Misalnya bila requester mengirim header `Accept: application/json`, maka data akan dikirim dalam format JSON. Untuk pilihan tipe data yang bisa dikirim, selengkapnya bisa dibaca [di sini](https://www.iana.org/assignments/media-types/media-types.xhtml).
+
+* `@RestController` : mirip dengan `@Controller`, dengan tambahan: semua method otomatis diberikan `@ResponseBody`
+
+### Menghasilkan Dynamic Page ###
+
+
+Template Engine : untuk memasang variabel dalam halaman HTML. Bisa juga untuk menghasilkan file text, xml, xls, pdf, dsb yang ada templatenya dan ingin digabungkan dengan data.
+
+Berbagai template engine di Java
+
+* JSP : Java Server Pages. Perhatian !!! JSP berbeda dengan JSF.
+* Velocity
+* Freemarker
+* Thymeleaf
+* Jasper Report (Apache POI, iText)
+
+
