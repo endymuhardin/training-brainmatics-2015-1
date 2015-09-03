@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Daftar Peserta</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h1>Daftar Peserta</h1>
+        
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Tanggal Lahir</th>
+                    <th>&nbsp;</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="p : ${daftarPeserta}">
+                    <td th:text="${p.nama}">Endy</td>
+                    <td th:text="${p.email}">endy@artivisi.com</td>
+                    <td th:text="${p.tanggalLahir}">2015-01-01</td>
+                    <td>
+                       <a href="form.html" th:href="@{/peserta/form(id=${p.id})}">
+                           edit
+                       </a>| 
+                       <a href="view.html" th:href="@{/peserta/view(id=${p.id})}">
+                           lihat
+                        </a>| 
+                       <a href="view.html" th:href="@{/peserta/hapus(id=${p.id})}">
+                         hapus
+                       </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        
+    </body>
+</html>
