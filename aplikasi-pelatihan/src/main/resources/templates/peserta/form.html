@@ -13,7 +13,8 @@ and open the template in the editor.
     <body>
         <h1>Edit Peserta</h1>
         
-        <form action="#" th:action="@{/peserta/form}" th:object="${peserta}" method="post">
+        <form action="#" th:action="@{/peserta/form}" th:object="${peserta}" 
+              method="post" enctype="multipart/form-data">
             
             <table border="1">
                 
@@ -34,6 +35,12 @@ and open the template in the editor.
                         <td>Tanggal Lahir</td>
                         <td><input type="text" th:field="*{tanggalLahir}" /></td>
                         <td th:if="${#fields.hasErrors('tanggalLahir')}" th:errors="*{tanggalLahir}">Pesan error</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Foto</td>
+                        <td><input type="file" name="foto" /></td>
+                        <td>&nbsp;</td>
                     </tr>
                     
                     <tr>
