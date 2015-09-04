@@ -31,6 +31,28 @@ and open the template in the editor.
                 </li>
             </ul>
         </div>
+        
+        <div ng-controller="MateriController">
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Kode</th>
+                        <th>Nama</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="m in dataMateri.content">
+                        <td>{{m.kode}}</td>
+                        <td>{{m.nama}}</td>
+                        <td><button ng-click="hapusMateri(m)">hapus</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            
+        </div>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
         <script src="/js/pelatihan.js"></script>
     </body>
