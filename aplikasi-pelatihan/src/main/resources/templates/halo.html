@@ -13,6 +13,10 @@ and open the template in the editor.
     <body>
         <h1>Aplikasi Spring Boot dengan Thymeleaf</h1>
         
+        <form name="f" th:action="@{/logout}" method="post">
+            <input type="submit" value="Logout" />
+        </form>
+        
         <ul>
             <li th:text="'Waktu : '+${waktu}">Ini nanti akan diganti waktu</li>
             <li th:text="'Nama : '+${nama}">Nanti diisi nama</li>
