@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
+        <div th:fragment="content">
         <h1>Login Page</h1>
         
         <form name="f" th:action="@{/login}" method="post">
@@ -48,5 +49,6 @@ and open the template in the editor.
                 </tbody>
             </table>
         </form>
+        </div>
     </body>
 </html>

@@ -2,6 +2,7 @@ package com.muhardin.endy.pelatihan.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.jasperreports.JasperReportsMultiFormatView;
@@ -16,6 +17,11 @@ public class KonfigurasiWeb extends WebMvcConfigurerAdapter {
         registry.addViewController("/materi/list").setViewName("/materi/list");
     }
 
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new ThymeleafLayoutInterceptor());
+    }
+    
     @Bean
     public JasperReportsViewResolver getJasperReportsViewResolver() {
         JasperReportsViewResolver resolver = new JasperReportsViewResolver();

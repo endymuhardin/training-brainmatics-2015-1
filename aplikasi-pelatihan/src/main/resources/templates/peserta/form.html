@@ -11,6 +11,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
+        <div th:fragment="content">
         <h1>Edit Peserta</h1>
         
         <form action="#" th:action="@{/peserta/form}" th:object="${peserta}" 
@@ -50,9 +51,8 @@ and open the template in the editor.
                     </tr>
                 </tbody>
             </table>
-
-            
         </form>
+        </div>
         
     </body>
 </html>
