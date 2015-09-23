@@ -5,6 +5,7 @@ import com.muhardin.endy.pelatihan.entity.Peserta;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -17,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/peserta")
@@ -62,7 +62,7 @@ public class PesertaHtmlController {
 
     @RequestMapping(value = "/form", method = RequestMethod.POST)
     public String prosesForm(@Valid Peserta p, BindingResult errors, 
-            MultipartFile foto) throws Exception {
+            MultipartFile foto, HttpSession session) throws Exception {
         if (errors.hasErrors()) {
             return "/peserta/form";
         }
@@ -78,8 +78,19 @@ public class PesertaHtmlController {
         System.out.println("Nama asli : "+namaAsli);
         System.out.println("Ukuran : "+ukuran);
         
+        String lokasiPath = "/upload";
+        String lokasiTomcat = session.getServletContext().getRealPath(lokasiPath);
+        System.out.println("Lokasi Tomcat dijalankan : "+lokasiTomcat);
+        String lokasiTujuan = lokasiTomcat + File.separator;
         
-        File tujuan = new File("foto.png");
+        //String homeFolder = System.getProperty("user.home");
+        //String lokasiTujuan = homeFolder + File.separator + "tmp";
+        File folderTujuan = new File(lokasiTujuan);
+        if(!folderTujuan.exists()){
+            folderTujuan.mkdirs();
+        }
+        File tujuan = new File(lokasiTujuan + File.separator + namaAsli);
+        
         foto.transferTo(tujuan);
         System.out.println("File sudah dicopy ke :"+tujuan.getAbsolutePath());
         
