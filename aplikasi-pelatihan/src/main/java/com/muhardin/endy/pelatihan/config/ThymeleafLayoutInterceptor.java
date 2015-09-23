@@ -16,6 +16,9 @@ public class ThymeleafLayoutInterceptor  extends HandlerInterceptorAdapter {
             return;
         }
         String originalViewName = modelAndView.getViewName();
+        if(originalViewName.startsWith("redirect:")){
+            return;
+        }
         modelAndView.setViewName(DEFAULT_LAYOUT);
         modelAndView.addObject(DEFAULT_VIEW_ATTRIBUTE_NAME, originalViewName);
     }    
