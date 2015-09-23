@@ -1,6 +1,6 @@
-drop table s_user_rold;
-drop table role;
-drop table s_users;
+drop table if exists s_user_role;
+drop table if exists s_roles;
+drop table if exists s_users;
 
 create table s_users (
     id VARCHAR(36) PRIMARY KEY,
