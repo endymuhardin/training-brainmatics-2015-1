@@ -41,6 +41,8 @@ public class KonfigurasiSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/css/**").permitAll()
+                .antMatchers("/js/**").permitAll()
                 .antMatchers("/halo").hasAnyRole("ADMIN", "STAFF")
                 .antMatchers("/peserta/form").hasRole("ADMIN")
                 .antMatchers("/peserta/list").hasRole("STAFF")
