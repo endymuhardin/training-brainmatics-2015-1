@@ -17,6 +17,8 @@ and open the template in the editor.
         <form action="#" th:action="@{/peserta/form}" th:object="${peserta}" 
               method="post" enctype="multipart/form-data">
             
+            <input type="hidden" th:field="*{id}" />
+            
             <table border="1">
                 
                 <tbody>
