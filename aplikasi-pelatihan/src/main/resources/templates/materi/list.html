@@ -11,7 +11,9 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     </head>
-    <body ng-app="aplikasiPelatihan">
+    <body>
+        <div th:fragment="content">
+            <div  ng-app="aplikasiPelatihan">
         <h1>Daftar Materi</h1>
         <div ng-controller="HaloController">
         
@@ -80,7 +82,9 @@ and open the template in the editor.
             
         </div>
         
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+        
         <script src="/js/pelatihan.js"></script>
+            </div>
+        </div>
     </body>
 </html>
